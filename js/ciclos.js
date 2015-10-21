@@ -36,7 +36,7 @@ console.log("El ciclo do-while terminó.");
 
 
 
-
+/*
 var total=0;
 
 for(var i=0; i<=100;i++)
@@ -49,16 +49,29 @@ for(var i=0; i<=100;i++)
 }
 console.log("El resultado de la sumatoria es: " + total)
 
+*/
 /**/
+// FACTORIAL. Dado un número entero entre 0 y 10, calcular:
+var factorial=1; 
+var n=10; // 5! = 120
+var i=1;
 /*
-var factorial=1, n=1;
-
-for(n; n<=4;n++)
+for(n; n<=4; n++)
 {
 		factorial *= n;
 }
 console.log(factorial)
 */
+//Con Do While
+do{
+	//factorial= factorial * i;
+	if (n==0) {
+		break
+	};
+	factorial *= i;
+	i++;
+}while(i <= n);
+console.log("El factorial de " + n + " es " + factorial)
 /*
 var array=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var index = array.length;
